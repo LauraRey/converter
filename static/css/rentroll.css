@@ -1,0 +1,141 @@
+
+body {
+    background-image: url("/static/images/landing_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #98C23D;
+    font-size: 35px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom:3%;
+    font-family: "NotoSans";
+}
+
+h2 {
+    color: #435865;
+    font-size: 65px;
+    margin-left: 10%;
+    margin-top: -30px;
+    font-family: "NotoSerif";
+    line-height: 90%;
+}
+
+
+form p {
+    font-size: 24px;
+    color: #435865;
+    text-align: center;
+    font-family: OpenSans;
+}
+
+.inputbox {
+    margin-left: 12%;
+}
+form button {
+    margin: 0;
+    color: #fff;
+    background: #16a085;
+    border: none;
+    width: 508px;
+    height: 35px;
+    margin-top: -20px;
+    margin-left: -4px;
+    border-radius: 4px;
+    border-bottom: 4px solid #117A60;
+    transition: all .2s ease;
+    outline: none;
+}
+
+form button:hover {
+    background: #149174;
+    color: #0C5645;
+}
+
+form button:active {
+    border: 0;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #98C23D;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.download-button {
+    display: inline-block;
+    background: #98C23D;
+    color: #FFFFFF;
+    border-radius: 100px;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    border: none;
+    font-family: NotoSans;
+    font-size: 20px;
+    letter-spacing: 0.83px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.download-shadow {
+    box-shadow: 0 0 30px 0 rgba(152, 194, 61, 0.55);
+    border-radius: 100px;
+    margin-left: 10%;
+    width: 25%;
+}
+
+.upload_box {
+    width: 30%;
+    height: 15%;
+    margin-left: 10%;
+    box-shadow: 0 4px 8px 0 ;
+}
+
+.upload {
+    width:50%;
+    height:50%
+}
+.download {
+    height:60px;
+    visibility:hidden
+}
+
+.message {
+    margin-left: 12%;
+    font-family: "NotoSerif";
+    font-size: 18px;
+    color: limegreen;
+}
+
+h3 {
+    margin-left: 12%;
+    font-family: "NotoSerif";
+    font-size: 18px;
+    color:green ;
+}

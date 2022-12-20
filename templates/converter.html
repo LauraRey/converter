@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/rentroll.css') }}">
+<script src="{{ url_for('static', filename='js/rentroll.js') }}"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rent Roll Converter</title>
+</head>
+<body>
+<div style="width:20%;float:right;margin-right:5%">
+    <img src="{{ url_for('static', filename='images/logo.png') }}" style="width:100%">
+</div>
+</br>
+<div>
+    <h1>Welcome to Rent Roll</h1>
+    <h2>Your convenient online </br>converter for Excel </br>spreadsheets.</h2>
+</div>
+<h3>Upload a file, click "Submit", and the file will be converted and automatically downloaded.</h3>
+<div class="inputbox">
+    <form id="uploadBox" method='POST' action='/' enctype='multipart/form-data'>
+        <input type="file" id="excelfile" name="excelfile" accept=".xlsx"></label>
+        <input type="submit">
+    </form>
+</div>
+
+<p class="message">{{ message }}</p>
+
+</body>
+</html>
